@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>South Florida Gold</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:white;
+color:black;
+text-align:center;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+border-bottom:2px solid black;
+padding:20px;
+}
+
+header img{
+width:180px;
+max-width:80%;
+height:auto;
+}
+
+/* HERO VIDEO */
+
+.hero{
+position:relative;
+width:100%;
+height:70vh;
+overflow:hidden;
+}
+
+.hero video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:clamp(20px,3vw,32px);
+background:rgba(255,255,255,0.8);
+padding:10px 20px;
+font-weight:600;
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+margin:25px auto;
+padding:14px 30px;
+background:black;
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+/* TEXT SECTION */
+
+.section{
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+font-size:clamp(16px,2vw,20px);
+}
+
+/* IMAGE ROW */
+
+.image-row{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.image-box{
+position:relative;
+}
+
+.image-box img{
+width:320px;
+max-width:90vw;
+height:auto;
+}
+
+.price{
+position:absolute;
+bottom:12px;
+left:50%;
+transform:translateX(-50%);
+background:black;
+color:white;
+padding:6px 12px;
+font-size:14px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+border-top:1px solid black;
+padding:40px 20px;
+}
+
+footer a{
+color:black;
+font-weight:600;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header>
+
+<img src="gallery/logo.png" alt="South Florida Gold">
+
+</header>
+
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="gallery/hero.mp4" type="video/mp4">
+</video>
+
+<div class="hero-text">
+Passion in our creations
+</div>
+
+</section>
+
+
+<a class="button" href="more.html">
+More of Us
+</a>
+
+
+<section class="section">
+
+<p>
+Tampa gold, made for you. We craft timeless pieces that feel warm, real, and made to last.
+</p>
+
+<br>
+
+<p>
+Born in Tampa, we keep it simple: clean lines, solid gold, no flash just for flash. Each piece is shaped to live with you — everyday moments, family, work, nights out.
+</p>
+
+<br>
+
+<p>
+We’re neighbors first. You walk in, we talk, we make something that fits your life. No pressure, just gold with taste.
+</p>
+
+</section>
+
+
+<div class="image-row">
+
+<div class="image-box">
+<img src="gallery/grill1.jpg">
+<div class="price">110 per tooth</div>
+</div>
+
+<div class="image-box">
+<img src="gallery/grill2.jpg">
+<div class="price">110 per tooth</div>
+</div>
+
+</div>
+
+
+<section class="section">
+
+<p>
+Tampa gold, made for you. We craft timeless pieces that feel like home — warm, real, and made to last.
+</p>
+
+<br>
+
+<img src="gallery/cuban-ring.jpg" style="max-width:420px;width:90%;">
+
+<br><br>
+
+<a class="button" href="more.html">
+More of Us
+</a>
+
+</section>
+
+
+<footer>
+
+<p>Contact us on WhatsApp</p>
+
+<br>
+
+<a href="https://wa.me/12132823872">
++1 (213) 282-3872
+</a>
+
+</footer>
+
+</body>
+  </html>
