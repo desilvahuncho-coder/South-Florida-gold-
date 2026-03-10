@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More Of Us | South Florida Gold</title>
+<style>
+body { margin:0; padding:0; font-family:'Arial', sans-serif; background:#111; color:white; }
+h1,h2,h3,p { margin:0; } a { text-decoration:none; color:white; }
+
+.title-section {
+    display:flex; align-items:center; justify-content:flex-start;
+    max-width:1100px; margin:50px auto 50px auto; gap:20px;
+}
+.title-section h1 { font-size:clamp(28px,4vw,36px); font-weight:bold; color:#ffc107; }
+.diamond { width:40px; height:40px; background:url('diamond.png') no-repeat center center; background-size:contain; flex-shrink:0; }
+
+.gallery { column-count:2; column-gap:20px; max-width:1100px; margin:0 auto 80px auto; }
+.gallery-item { break-inside:avoid; margin-bottom:20px; border-radius:12px; overflow:hidden; }
+.gallery-item img, .gallery-item video { width:100%; border-radius:12px; display:block; }
+
+.contact { max-width:800px; margin:0 auto 50px auto; text-align:left; padding:0 20px; }
+.contact h3 { font-size:clamp(18px,2.5vw,24px); font-weight:bold; margin-bottom:10px; border-bottom:2px solid white; display:inline-block; }
+.contact p { margin:10px 0; }
+.contact a { color:#0f9d58; font-weight:bold; }
+
+@media(max-width:768px){
+    .gallery { column-count:1; }
+    .title-section { flex-direction:column; gap:10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="title-section">
+    <h1>REDEFINED GOLD ICED OUT STYLE</h1>
+    <div class="diamond"></div>
+</div>
+
+<div class="gallery">
+    <div class="gallery-item"><img src="grill1.jpg" alt="Grill 1"></div>
+    <div class="gallery-item"><img src="grill2.jpg" alt="Grill 2"></div>
+    <div class="gallery-item"><img src="grill3.jpg" alt="Grill 3"></div>
+    <div class="gallery-item"><img src="grill4.jpg" alt="Grill 4"></div>
+    <div class="gallery-item"><img src="cuban-ring.jpg" alt="Cuban Ring"></div>
+    <div class="gallery-item"><img src="cuban-bracelet.jpg" alt="Cuban Bracelet"></div>
+    <div class="gallery-item"><img src="cuban-chain.jpg" alt="Cuban Chain"></div>
+    <div class="gallery-item"><img src="iced-out.jpg" alt="Iced Out"></div>
+    <div class="gallery-item"><video controls src="v1.mp4"></video></div>
+    <div class="gallery-item"><video controls src="v2.mp4"></video></div>
+    <div class="gallery-item"><video controls src="v3.mp4"></video></div>
+    <div class="gallery-item"><video controls src="v4.mp4"></video></div>
+    <div class="gallery-item"><video controls src="v5.mp4"></video></div>
+</div>
+
+<div class="contact">
+    <h3>contact us</h3>
+    <p>Phone: <a href="tel:+12132823872">+1 (213) 282-3872</a></p>
+    <p>Instagram: Southflotidagold1</p>
+    <p>TikTok: Southflotidagold1</p>
+    <p>Customer care available Monday–Saturday 9:30–7:00 PM</p>
+    <p>All Rights Reserved USA No One Jewelry</p>
+</div>
+
+</body>
+</html>
