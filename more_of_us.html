@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<title>More Of Us | South Florida Gold</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-image: url("clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+h1, h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  margin: 14px auto;
+  background: linear-gradient(90deg,#d4af37,#f2d47a,#d4af37);
+}
+
+.text-block {
+  max-width: 720px;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 30px;
+  margin-top: 60px;
+}
+
+.product {
+  break-inside: avoid;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.product img,
+.product video {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product img:hover,
+.product video:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+}
+
+.product-text {
+  max-width: 420px;
+  margin: 16px auto 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 28px;
+  margin-top: 40px;
+  background: linear-gradient(135deg, #d4af37,#f2d47a);
+  color: #1a1a1a;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 140px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media(max-width:900px){
+  .masonry{
+    column-count:1;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="section">
+    <h2>SOUTH FLORIDA GOLD</h2>
+    <h1>REDEFINED GOLD ICED OUT STYLE</h1>
+    <div class="text-block">
+      A deeper look into custom grills and Cuban jewelry crafted by South Florida Gold. Every piece focuses on shine, detail, and bold presence.
+    </div>
+  </div>
+
+  <div class="masonry">
+
+    <div class="product">
+      <img src="grill1.jpg">
+      <div class="product-text">Precision fitted gold grills crafted to deliver shine and perfect comfort.</div>
+    </div>
+
+    <div class="product">
+      <img src="grill2.jpg">
+      <div class="product-text">Custom grill sets shaped to match each smile with bold gold finish.</div>
+    </div>
+
+    <div class="product">
+      <img src="grill3.jpg">
+      <div class="product-text">Luxury dental jewelry designed for statement level presence.</div>
+    </div>
+
+    <div class="product">
+      <img src="grill4.jpg">
+      <div class="product-text">Hand crafted grill pieces polished for smooth shine and durability.</div>
+    </div>
+
+    <div class="product">
+      <img src="cuban-ring.jpg">
+      <div class="product-text">Cuban rings built with thick gold links and a strong polished structure.</div>
+    </div>
+
+    <div class="product">
+      <img src="cuban-necklace.jpg">
+      <div class="product-text">Cuban necklaces designed to balance heavy gold weight and clean shine.</div>
+    </div>
+
+    <div class="product">
+      <img src="cuban-chain.jpg">
+      <div class="product-text">Classic Cuban chains crafted for durability and bold luxury presence.</div>
+    </div>
+
+    <div class="product">
+      <video autoplay muted loop controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <div class="product-text">Close-up video showing meticulous finishing.</div>
+    </div>
+
+    <div class="product">
+      <video autoplay muted loop controls>
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+      <div class="product-text">Gold craftsmanship in motion.</div>
+    </div>
+
+    <div class="product">
+      <video autoplay muted loop controls>
+        <source src="video3.mp4" type="video/mp4">
+      </video>
+      <div class="product-text">Highlighting intricate details of jewelry pieces.</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a class="button" href="tel:+12132823872">+1 213 282 3872</a>
+    <p style="margin-top:40px;">Instagram and TikTok: Southfloridagold1</p>
+    <p style="margin-top:40px;">Customer care services Monday to Saturday 9:30 to 7:00 pm</p>
+    <p style="margin-top:40px;">All rights reserved USA</p>
+  </div>
+
+</div>
+</body>
+</html>
