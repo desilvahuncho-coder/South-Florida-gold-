@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<title>More Of Us | South Florida Gold</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Playfair Display',serif;
+background-image:url("clouds.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:#1a1a1a;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-top:120px;
+margin-bottom:80px;
+text-align:center;
+}
+
+h1,h2{
+letter-spacing:2px;
+}
+
+h1::after,
+h2::after{
+content:"";
+display:block;
+width:90px;
+height:2px;
+margin:14px auto;
+background:linear-gradient(90deg,#d4af37,#f2d47a,#d4af37);
+}
+
+.text{
+max-width:720px;
+margin:20px auto;
+font-size:18px;
+line-height:1.6;
+}
+
+/* masonry */
+
+.masonry{
+column-count:3;
+column-gap:30px;
+margin-top:80px;
+}
+
+.product{
+break-inside:avoid;
+margin-bottom:40px;
+text-align:center;
+}
+
+.product img,
+.product video{
+width:100%;
+border-radius:16px;
+object-fit:cover;
+box-shadow:0 20px 40px rgba(0,0,0,0.35);
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.product img:hover,
+.product video:hover{
+transform:translateY(-8px) scale(
