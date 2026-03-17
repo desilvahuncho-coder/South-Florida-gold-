@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>South Florida Gold</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.15)),url('clouds.jpg');
+background-size:cover;
+background-position:center;
+color:#1a1a1a;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+header{
+position:sticky;
+top:0;
+background:rgba(0,0,0,0.35);
+text-align:center;
+padding:20px;
+font-family:'Rubik Glitch',cursive;
+font-size:26px;
+color:#e6b7a9;
+letter-spacing:2px;
+border-bottom:1px solid rgba(212,175,55,0.3);
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:flex-end;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding-bottom:40px;
+color:white;
+font-family:'Playfair Display',serif;
+}
+
+.hero h1{
+font-size:42px;
+margin:0;
+}
+
+section{
+padding:70px 0;
+}
+
+.category-title{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:28px;
+letter-spacing:2px;
+}
+
+.gold-line{
+width:80px;
+height:1px;
+background:#d4af37;
+margin:12px auto 20px auto;
+}
+
+.category-desc{
+text-align:center;
+font-size:13px;
+line-height:1.6;
+margin-bottom:30px;
+opacity:0.85;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+margin-bottom:30px;
+}
+
+.grid img{
+width:100%;
+border-radius:10px;
+transition:transform 0.6s ease,filter 0.6s ease;
+}
+
+.grid img:hover{
+transform:scale(1.05);
+filter:brightness(1.1);
+}
+
+.grid p{
+text-align:center;
+font-size:12px;
+color:#d4af37;
+margin-top:6px;
+letter-spacing:1px;
+}
+
+.feature img,
+.feature video{
+width:100%;
+border-radius:10px;
+box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+
+.carousel{
+display:flex;
+overflow:hidden;
+}
+
+.carousel-item{
+min-width:100%;
+position:relative;
+}
+
+.carousel video{
+width:100%;
+border-radius:10px;
+}
+
+.mute{
+position:absolute;
+bottom:15px;
+right:15px;
+background:#d4af37;
+border:none;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+margin:70px 0 40px 0;
+}
+
+.footer-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.button{
+padding:12px 28px;
+background:linear-gradient(135deg,#d4af37,#f2d47a);
+color:#1a1a1a;
+font-weight:700;
+text-decoration:none;
+border-radius:8px;
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>South Florida Gold</header>
+
+<div class="hero">
+<h1>Put Money Where Your Mouth At</h1>
+</div>
+
+<div class="container">
+
+<section>
+
+<h2 class="category-title">Cuban Suite</h2>
+<div class="gold-line"></div>
+
+<p class="category-desc">
+Solid Cuban jewelry built with heavy gold presence.<br>
+Every piece represents bold craftsmanship and luxury weight.<br>
+Designed for statement style and timeless shine.
+</p>
+
+<div class="grid">
+
+<div><img src="cubam-chain1.jpg"><p>Cuban Chain</p></div>
+<div><img src="cubam-chain2.jpg"><p>Diamond Cuban</p></div>
+<div><img src="cubam-ring1.jpg"><p>Cuban Ring</p></div>
+<div><img src="cubam-ring2.jpg"><p>Iced Ring</p></div>
+
+</div>
+
+<div class="feature">
+<video src="cubam-ring-video.mp4" autoplay muted loop></video>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="category-title">Grills</h2>
+<div class="gold-line"></div>
+
+<p class="category-desc">
+Custom grills designed for bold smiles.<br>
+Precision fitted gold and diamond patterns.<br>
+Luxury mouthpieces built to stand out.
+</p>
+
+<div class="grid">
+
+<div><img src="grill1.jpg"><p>Gold Grill</p></div>
+<div><img src="grill2.jpg"><p>Diamond Grill</p></div>
+<div><img src="grill3.jpg"><p>Top Grill</p></div>
+<div><img src="grill4.jpg"><p>Bottom Grill</p></div>
+
+</div>
+
+<div class="feature">
+<img src="grill5.jpg">
+</div>
+
+</section>
+
+<section>
+
+<h2 class="category-title">Customer Service</h2>
+<div class="gold-line"></div>
+
+<p class="category-desc">
+Real crafting moments from our jewelry process.<br>
+From mold to shine each detail matters.<br>
+Watch how every piece becomes gold.
+</p>
+
+<div class="carousel" id="carousel">
+
+<div class="carousel-item">
+<video src="cs1.mp4" autoplay muted loop></video>
+<button class="mute">sound</button>
+</div>
+
+<div class="carousel-item">
+<video src="cs2.mp4" autoplay muted loop></video>
+<button class="mute">sound</button>
+</div>
+
+<div class="carousel-item">
+<video src="cs3.mp4" autoplay muted loop></video>
+<button class="mute">sound</button>
+</div>
+
+<div class="carousel-item">
+<video src="cs4.mp4" autoplay muted loop></video>
+<button class="mute">sound</button>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<div class="footer-buttons">
+
+<a href="more-of-us.html" class="button">More Of Us</a>
+
+<a href="https://wa.me/12132823872" class="button">WhatsApp</a>
+
+</div>
+
+</footer>
+
+<script>
+
+const carousel=document.getElementById("carousel")
+let index=0
+
+setInterval(()=>{
+index++
+if(index>=carousel.children.length)index=0
+carousel.style.transform=`translateX(-${index*100}%)`
+},2000)
+
+document.querySelectorAll(".mute").forEach(btn=>{
+btn.onclick=()=>{
+let video=btn.previousElementSibling
+video.muted=!video.muted
+}
+})
+
+</script>
+
+</body>
+</html>
