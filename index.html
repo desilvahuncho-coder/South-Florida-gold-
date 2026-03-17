@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Florida Gold</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* General Styles */
+body {
+  margin: 0;
+  font-family: serif;
+  background: url('images/clouds.jpg') center/cover no-repeat;
+  color: #000;
+}
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #d4af37;
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #d4af37;
+  font-size: 2rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* Grids */
+.section {
+  padding: 40px 20px;
+}
+.section h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.grid-item {
+  position: relative;
+  text-align: center;
+}
+.grid-item img {
+  width: 100%;
+  display: block;
+}
+.grid-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* Featured Media */
+.featured {
+  margin-top: 20px;
+}
+.featured img, .featured video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+.carousel-item video {
+  width: 100%;
+  display: block;
+}
+.mute-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: rgba(212,175,55,0.8);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #d4af37;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+footer button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: rgba(212,175,55,0.8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer img {
+  width: 40px;
+  height: auto;
+  margin: 0 5px;
+}
+</style>
+</head>
+<body>
+
+<header>South Florida Gold</header>
+
+<!-- Hero Video -->
+<section class="hero">
+  <video autoplay muted loop>
+    <source src="videos/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text">Put money where your mouth is</div>
+</section>
+
+<!-- Cuban Section -->
+<section class="section" id="cubans">
+  <h2>Cubans</h2>
+  <div class="grid">
+    <div class="grid-item"><img src="images/cubam-chain1.jpg"><p>Cuban Chain 1</p></div>
+    <div class="grid-item"><img src="images/cubam-chain2.jpg"><p>Cuban Chain 2</p></div>
+    <div class="grid-item"><img src="images/cubam-ring1.jpg"><p>Cuban Ring 1</p></div>
+    <div class="grid-item"><img src="images/cubam-ring2.jpg"><p>Cuban Ring 2</p></div>
+  </div>
+  <div class="featured">
+    <video autoplay muted loop controls>
+      <source src="videos/cubam-video1.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- Grills Section -->
+<section class="section" id="grills">
+  <h2>Grills</h2>
+  <div class="grid">
+    <div class="grid-item"><img src="images/grill1.jpg"><p>Grill 1</p></div>
+    <div class="grid-item"><img src="images/grill2.jpg"><p>Grill 2</p></div>
+    <div class="grid-item"><img src="images/grill3.jpg"><p>Grill 3</p></div>
+    <div class="grid-item"><img src="images/grill4.jpg"><p>Grill 4</p></div>
+  </div>
+  <div class="featured">
+    <img src="images/grill5.jpg" alt="Grill Featured">
+  </div>
+</section>
+
+<!-- Iced Out Section -->
+<section class="section" id="icedout">
+  <h2>Iced Out</h2>
+  <div class="grid">
+    <div class="grid-item"><img src="images/icedwatch1.jpg"><p>Iced Out Watch</p></div>
+    <div class="grid-item"><img src="images/icedgrill1.jpg"><p>Iced Out Grill</p></div>
+  </div>
+  <div class="featured">
+    <img src="images/icedgrill-featured.jpg">
+  </div>
+</section>
+
+<!-- People Wearing Grills Section -->
+<section class="section" id="peoplegrills">
+  <h2>People Wearing Grills</h2>
+  <div class="grid">
+    <div class="grid-item"><img src="images/peoplegrill1.jpg"><p>Grill Look 1</p></div>
+    <div class="grid-item"><img src="images/peoplegrill2.jpg"><p>Grill Look 2</p></div>
+  </div>
+</section>
+
+<!-- Customer Service Carousel -->
+<section class="section" id="customerservice">
+  <h2>Customer Service</h2>
+  <div class="carousel" id="cs-carousel">
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs1.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs2.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs3.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs4.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs5.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+      <div class="carousel-item">
+        <video autoplay muted loop controls>
+          <source src="videos/cs6.mp4" type="video/mp4">
+        </video>
+        <button class="mute-btn">Unmute</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <button onclick="location.href='more-of-us.html'">More of Us</button>
+  <button onclick="window.open('https://wa.me/12132823872', '_blank')">WhatsApp</button>
+  <img src="payment-icons/applepay.png" alt="Apple Pay">
+  <img src="payment-icons/btc.png" alt="BTC">
+  <img src="payment-icons/cashapp.png" alt="CashApp">
+  <img src="payment-icons/paypal.png" alt="PayPal">
+  <img src="payment-icons/zelle.png" alt="Zelle">
+</footer>
+
+<script>
+// Carousel Auto Slide
+const track = document.querySelector('.carousel-track');
+let index = 0;
+const items = document.querySelectorAll('.carousel-item');
+setInterval(() => {
+  index = (index + 1) % items.length;
+  track.style.transform = `translateX(-${index * 100}%)`;
+}, 2000);
+
+// Mute/Unmute buttons
+document.querySelectorAll('.mute-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const vid = btn.previousElementSibling;
+    vid.muted = !vid.muted;
+    btn.textContent = vid.muted ? 'Unmute' : 'Mute';
+  });
+});
+</script>
+
+</body>
+</html>
