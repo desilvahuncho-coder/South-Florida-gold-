@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Florida Gold</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:url('clouds.jpg') center/cover no-repeat;
+  color:#1a1a1a;
+}
+.container{max-width:1100px;margin:auto;padding:20px;}
+
+/* LIVE SUPPORT STRIP */
+.live-support{
+  background:#007BFF;
+  color:white;
+  text-align:center;
+  font-size:12px;
+  padding:5px 0;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  text-align:center;
+  padding:15px 0;
+  font-family:'Playfair Display',serif;
+  font-size:36px;
+  color:skyblue;
+  background:white;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+.hero h1{
+  position:relative;
+  color:white;
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  margin-bottom:40px;
+  z-index:1;
+  text-align:center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* CATEGORY */
+section{
+  padding:70px 0;
+}
+.category-title{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+.gold-line{
+  width:80px;
+  height:1px;
+  background:#d4af37;
+  margin:12px auto 20px auto;
+}
+.category-desc{
+  text-align:center;
+  font-size:13px;
+  opacity:0.8;
+  margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin-bottom:30px;
+}
+.grid img{
+  width:100%;
+  border-radius:10px;
+  display:block;
+  transition:transform 0.6s ease, filter 0.6s ease;
+}
+.grid img:hover{
+  transform:scale(1.05);
+  filter:brightness(1.1);
+}
+.grid p{
+  text-align:center;
+  font-size:12px;
+  color:#d4af37;
+  margin-top:6px;
+  letter-spacing:1px;
+}
+
+/* FEATURE IMAGE/VIDEO */
+.feature{
+  margin-top:20px;
+}
+.feature img,
+.feature video{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* CUSTOMER SERVICE CAROUSEL */
+.carousel{
+  display:flex;
+  overflow:hidden;
+  gap:16px;
+  scroll-behavior:smooth;
+}
+.carousel video{
+  min-width:100%;
+  flex-shrink:0;
+  border-radius:10px;
+}
+.carousel-controls{
+  text-align:center;
+  margin:10px 0;
+}
+.control-button{
+  padding:10px 20px;
+  margin:0 5px;
+  background:linear-gradient(135deg,#d4af37,#f2d47a);
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  margin:70px 0 40px 0;
+}
+footer a{
+  display:inline-block;
+  margin:10px;
+  padding:12px 28px;
+  background:linear-gradient(135deg,#d4af37,#f2d47a);
+  color:#1a1a1a;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:8px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* FADE-IN */
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease;
+}
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
+</style>
+</head>
+<body>
+
+<div class="live-support">Call +1 (213) 282-3872 for live support</div>
+<header>South Florida Gold</header>
+
+<div class="hero">
+<video src="cs1.mp4" autoplay muted loop></video>
+<h1>Put Money Where Your Mouth At</h1>
+</div>
+
+<div class="container">
+
+<!-- CUBAN SUITE -->
+<section>
+<h2 class="category-title">Cuban Suite</h2>
+<div class="gold-line"></div>
+<p class="category-desc">Heavy gold Cuban pieces<br>Bold polished links<br>Luxury craftsmanship</p>
+<div class="grid">
+  <div class="fade-in"><img src="cubam-chain1.jpg"><p>Heavy Chain</p></div>
+  <div class="fade-in"><img src="cubam-chain2.jpg"><p>Diamond Link</p></div>
+  <div class="fade-in"><img src="cubam-ring1.jpg"><p>Iced Ring</p></div>
+  <div class="fade-in"><img src="cubam-ring2.jpg"><p>Polished Finish</p></div>
+  <div class="fade-in"><img src="cubam-bracelet1.jpg"><p>Gold Bracelet</p></div>
+</div>
+<div class="feature"><video src="cubam-feature1.mp4" autoplay muted loop></video></div>
+</section>
+
+<!-- GRILLS -->
+<section>
+<h2 class="category-title">Grills</h2>
+<div class="gold-line"></div>
+<p class="category-desc">Custom gold designs<br>Diamond details<br>Flush fit comfort</p>
+<div class="grid">
+  <div class="fade-in"><img src="grill1.jpg"><p>Classic 6-Tooth</p></div>
+  <div class="fade-in"><img src="grill2.jpg"><p>Rose Fang</p></div>
+  <div class="fade-in"><img src="grill3.jpg"><p>8-Tooth Flat</p></div>
+  <div class="fade-in"><img src="grill4.jpg"><p>Diamond Dust</p></div>
+  <div class="fade-in"><img src="grill5.jpg"><p>Black Drip</p></div>
+</div>
+<div class="feature"><img src="grill-feature1.jpg"></div>
+</section>
+
+<!-- ICED OUT -->
+<section>
+<h2 class="category-title">Iced Out</h2>
+<div class="gold-line"></div>
+<p class="category-desc">Luxury iced watches<br>High-shine diamonds<br>Top craftsmanship</p>
+<div class="grid">
+  <div class="fade-in"><img src="iced1.jpg"><p>Bustdown Watch</p></div>
+  <div class="fade-in"><img src="iced2.jpg"><p>Iced Teeth</p></div>
+</div>
+<div class="feature"><video src="iced-feature1.mp4" autoplay muted loop></video></div>
+</section>
+
+<!-- CUSTOM FREE TONES -->
+<section>
+<h2 class="category-title">Custom Free Tones</h2>
+<div class="gold-line"></div>
+<p class="category-desc">Unique gold patterns<br>Creative custom pieces<br>Limited designs</p>
+<div class="grid">
+  <div class="fade-in"><img src="custom1.jpg"><p>Tone Finish</p></div>
+  <div class="fade-in"><img src="custom2.jpg"><p>Gold Pattern</p></div>
+</div>
+<div class="feature"><img src="custom-feature1.jpg"></div>
+</section>
+
+<!-- CUSTOMER SERVICE CAROUSEL -->
+<section>
+<h2 class="category-title">Customer Service</h2>
+<div class="gold-line"></div>
+<p class="category-desc">Craft process videos<br>Step by step creation<br>Learn techniques</p>
+<div class="carousel">
+  <video src="cs1.mp4" autoplay muted loop controls></video>
+  <video src="cs2.mp4" autoplay muted loop controls></video>
+  <video src="cs3.mp4" autoplay muted loop controls></video>
+  <video src="cs4.mp4" autoplay muted loop controls></video>
+  <video src="cs5.mp4" autoplay muted loop controls></video>
+</div>
+</section>
+
+</div>
+
+<footer>
+<a href="more-of-us.html">More Of Us</a>
+<a href="https://wa.me/12132823872">WhatsApp</a>
+</footer>
+
+<script>
+// Fade-in on scroll
+const items=document.querySelectorAll(".fade-in");
+window.addEventListener("scroll",()=>{
+items.forEach(item=>{
+const top=item.getBoundingClientRect().top;
+if(top<window.innerHeight-80)item.classList.add("show");
+});
+});
+</script>
+
+</body>
+</html>
